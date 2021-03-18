@@ -13,22 +13,27 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Container(
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("images/background.jpg"), fit: BoxFit.cover)),
-        child: Stack(
-          children: <Widget>[
-            Column(
-              children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.only(top: 70, bottom: 32),
-                  child: Image.asset("images/tickicon.png"
-                  ),
-                ),
-              FormContainer(),
-              ],
-            )
-          ],
+                image: AssetImage("images/background.jpg"), fit: BoxFit.cover)
         ),
+         child: ListView(
+           padding: EdgeInsets.zero,
+           children:<Widget> [
+             Column(
+               children:<Widget>[
+                 Padding(
+                   padding: EdgeInsets.only(top: 70, bottom: 32),
+                   child: Image.asset("images/tickicon.png" , width: 150, height: 150,
+                   fit: BoxFit.contain,
+                   ),
+
+                 ),
+                 FormContainer()
+               ],
+             )
+           ],
+         ),
       ),
+
     );
   }
 }
