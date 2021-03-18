@@ -1,3 +1,4 @@
+import 'package:animation2/widget/signupbutton.dart';
 import 'package:animation2/widget/widget_form.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +28,8 @@ class _LoginScreenState extends State<LoginScreen> {
                    ),
 
                  ),
-                 FormContainer()
+                 FormContainer(),
+                 SignUpButton()
                ],
              )
            ],
