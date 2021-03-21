@@ -16,6 +16,7 @@ class StaggerAnimation extends StatelessWidget {
       padding: EdgeInsets.zero,
       children:<Widget> [
         HomeTop(
+          containerGrow: containerGrow,
 
         )
       ],
