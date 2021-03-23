@@ -29,7 +29,7 @@ class HomeTop extends StatelessWidget {
               Text(
                 "Bem-vindo, José Domingos!",
                 style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 18,
                     fontWeight: FontWeight.w300,
                     color: Colors.white
                 ),
