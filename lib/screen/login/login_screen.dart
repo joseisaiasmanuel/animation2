@@ -31,7 +31,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
 
   @override
   Widget build(BuildContext context) {
-    timeDilation=1;
+    timeDilation=5;
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
