@@ -1,3 +1,4 @@
+import 'package:animation2/screen/home/home_screen.dart';
 import 'package:animation2/widget/atagger_animation.dart';
 import 'package:animation2/widget/signupbutton.dart';
 import 'package:animation2/widget/widget_form.dart';
@@ -20,6 +21,12 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
     vsync: this,
     duration: Duration(seconds: 2)
   );
+
+  _animationController.addStatusListener((status) {
+    if(status==AnimationStatus.completed){
+      Navigator.of(context).push(MaterialPageRoute(builder:(context)=>HomeScreen()));
+    }
+  });
   }
 
 
